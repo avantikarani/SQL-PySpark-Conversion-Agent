@@ -106,8 +106,9 @@ This project implements an Enterprise AI Agent built using <b>Google ADK</b> and
 pip install google-adk google-genai
 
 <h3>2. Set Environment Variables</h3>
-<p>export GOOGLE_API_KEY="YOUR_API_KEY"</p>
-<p>export GOOGLE_GENAI_USE_VERTEXAI=FALSE</p>
+<p>import os</p> 
+<p>os.environ.setdefault("GOOGLE_GENAI_USE_VERTEXAI", "FALSE")</p>
+<p>os.environ["GOOGLE_API_KEY"] = "YOUR_API_KEY"</p>
 
 <h2>Value Statement</h2>
 This Agent significantly accelerates data engineering workflows by:
